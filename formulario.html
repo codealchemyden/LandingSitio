@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/grande.css">
+    <link rel="shortcut icon" href="Images/favicon (1).ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="formulario">
+    <header id="cabecera1">
+        <h1>Canal de denuncias <br> Acoso</h1>
+    </header>
+    <main>
+        <form name="formulario_1" method="get" action="procesos.php">
+            <section>
+                <h2>I. Persona que informa de los hechos</h2>
+                <br>
+            <p>
+                <input type="radio" name="persona" value="persona1">Persona que ha sufrido el acoso:<br>
+            <input type="radio" name="persona" value="otros">Otras (Especificar): <input type="text" name="espesificar" ><br>
+
+            </p>
+        </section>
+        <section>
+        <h2>II. Datos de la persona que ha sufrido el acoso</h2>
+
+<p>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" name="nombre"  required>
+            </p>
+
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <br>
+                <input type="text" name="apellidos"  required>
+            </p>
+            <p>
+                <label for="dni">DNI:</label>
+                <br>
+                <input type="text" name="dni"  maxlength="11" pattern="[0-9] {10} [A-Z] {1}" required>
+
+            </p>
+            <p>
+                <label for="puesto">Puesto:</label>
+                <br>
+                <input type="text" name="puesto" required>
+
+            </p>
+            
+            <p>
+                
+                <label for="contrato">Tipo de contrato/Vinculación laboral</label><br>
+                <input type="radio" name="contrato" >Contrato de trabajo indefinido<br>
+            <input type="radio" name="contrato" >Contrato de trabajo temporal<br>
+            <input type="radio" name="contrato" >Contrato de trabajo fijo discontinuo<br>
+            <input type="radio" name="contrato" >Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+
+            </p>
+            <p>
+                <label for="phone">Telefono</label>
+                <br>
+                <input type="tel" name="phone" placeholder="999999999"> 
+
+            </p>
+            <p>
+                <label for="correo">Correo electroníco:</label>
+                <br>
+                <input type="email" name="correo" placeholder="correo777@gmail.com"> 
+
+            </p>
+            <p>
+                <label for="domicilio">Domicilio a efectos de notificaciones:</label></p>
+
+                <p>
+                <textarea name="domicilio" id="" cols="20" rows="5" required></textarea>
+
+            </p>
+            
+
+        </section>
+
+        <section>
+            <h2> III. Datos de la persona agresora</h2>
+            <p>
+                
+                    <label for="nombre">Nombre y apellidos</label>
+                    <br>
+                    <input type="text" name="nombre" required>
+            
+            </p>
+            <p>
+                <label for="puesto">Grupo/categoría profesional o puesto</label>
+                <br>
+                    <input type="text" name="puesto" required>
+            </p>
+            
+             <p>
+                <label for="centro">Centro de trabajo</label>
+                <br>
+                <select name="centro" id="listado">
+                    <option value="1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</option>
+                    <option value="2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</option>
+                    <option value="3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</option>
+                    <option value="4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</option>
+                </select>
+            </p>
+             
+<p>
+    <label for="empresa">Nombre de la empresa</label>
+    <br>
+        <input type="text" name="empresa" required>
+</p>
+
+
+        </section>
+        <section>
+            <h2> IV. Descripción de los hechos</h2>
+            <p>
+                Incluir un relato de los hechos denunciados, adjuntado las hojas numeradas que sean necesarias, incluyendo fechas en las que tuvieron lugar los hechos siempre que sea posible.
+
+            </p>
+            <p>
+                <textarea name="" id="" cols="20" rows="8"></textarea>
+                <br>
+                <input type="file" name="archivo" multiple>
+            </p>
+            
+
+        </section>
+        <section>
+            <h2> V. Testigos y/o pruebas</h2>
+            <p>
+            <label for="testigos">En caso de que haya testigos, indicar nombre y apellidos</label>
+            <input type="text" name="testigos" required>
+        </p>
+
+        <p>
+            Adjuntar cualquier medio de prueba que considere oportuno (indicar cuales)
+            <br>
+            <input type="file" name="archivo" multiple>
+        </p>
+        
+        </section>
+        <section>
+            <p>Se tenga por presentada la queja o denuncia de acoso (INDICAR SI ES SEXUAL O POR RAZÓN DE SEXO) frente a (IDENTIFICAR PERSONA AGRESORA) y se inicie el procedimiento previsto en el protocolo</p>
+            <p>
+                <p>
+                    <p class="par">Denuncia acoso Sexual
+                    <input type="radio" name="acoso2" >
+                </p>
+                <br>
+                <p class="par">Indicar si es sexual o por razón de sexo
+                <input type="radio" name="acoso2" >
+            </p>
+           
+            <p>
+                <label for="per">Identificar persona agresora:</label>
+                <input type="texto" name="per" >
+            </p>
+
+
+            <p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" required>
+            </p>
+            <p>
+                <label for="localidad">Localidad: </label><input type="text" name="localidad" required></p>
+
+        </section>
+
+        <section id="button">
+            <p> 
+                <input type="reset" name="borrar" value="Borrar Denuncia" class="enviar">
+
+                <input type="submit" name="enviar" value="Enviar Denuncia" class="enviar">
+
+            </p>
+        </section>
+
+
+        </form>
+        <section id="volver">
+            <a href="index.html" target="_blank">Volver</a></section>
+
+    </main>
+    <footer id="pies">
+        <section></section>
+
+    </footer>
+    
+</body>
+</html>

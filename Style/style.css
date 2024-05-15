@@ -1,0 +1,358 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+font-family: 'Arizonia'cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#cabecera{
+    background-image: url(../Images/pexels-yan-krukau.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#cabecera h1{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: .5em;
+    color: white;
+    font-weight: bold;
+    font-size: 3em ;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+}
+#detalles{
+    background-color: rgba(255,255,255,0.6);
+    padding: 2%;
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+}
+.sec_01{
+    margin-top: 50px;
+}
+.sec_01 #art1{
+    padding: 3%;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.sec_01 h2{
+    background-color: rgb(146, 129, 108);
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.sec_01 h2:hover{
+    background-color: white;
+    color: rgb(146, 129, 108);
+    border: 2px solid rgb(146, 129, 108);
+
+}
+.acoso_1{
+    padding: 3%;
+    margin: 5%;
+
+}
+.acoso_1 li{
+    font-size: 1.2em;
+    word-spacing: -3px;
+    text-align: justify;
+    margin-bottom: 17px;
+    font-weight: bold;
+    list-style-type: none;
+    list-style-image: url(../Images/icons8-squeezed-heart-50.png);
+    list-style-position: inside;
+    position: relative;
+    left: -400px;
+    animation: aparecer 5s;
+    /*height: auto;*/
+    left: 0;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        left: -100px;
+        /*height: 40px;*/
+
+    }
+    /*50%{
+        opacity: .5;
+        left: -50px;
+        /*height: 80px;
+
+    }*/
+    100%{
+        opacity: 1;
+        left: 0px;
+        /*height: auto;*/
+
+    }
+}
+.foto_1{
+    width: 100%;
+    background-color:  rgb(146, 129, 108);
+    padding: 10px;
+}
+.foto_1 img{
+    width: 100%;
+    display: block;
+}
+.narrativa{
+    margin: 3%;
+    font-size: 1.3em;
+    text-align: justify;
+    font-weight: bold;
+    font-style: oblique;
+}
+#cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#cajas article{
+   
+    background-color:  rgb(146, 129, 108);
+    padding: 3%;
+    margin: 10px;
+    overflow: hidden;
+    font-size: 1.3em;
+    width: 250px;
+    height: 250px;
+    color: beige;
+    font-weight: bold;
+    text-align: justify;
+    word-break: break-all;
+    font-style: oblique;
+    position: relative;
+    
+}
+
+.foto2{
+    position: relative;
+    z-index: 10;
+}
+.foto2 img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0; 
+}
+
+#cajas article:hover.foto2 figure{
+    opacity: 0;
+}
+
+.texto{
+    position: relative;
+   
+}
+.foto3{
+position: absolute;
+top: 0px;
+left: 0px;
+opacity: 0;
+z-index: 11;
+}
+.foto3 img{
+    width: 100%;
+}
+#cajas article:hover .foto3{
+    opacity: 1;
+}
+.destacado{
+    color: rgb(146, 129, 108);
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+.sec_01 p{
+    padding: 2%;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#container2 figure{
+    width: 100%;
+    overflow: hidden;
+}
+#container2 figure img{
+    width: 100%;
+}
+#pies{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(78, 65, 50);
+    color: rgb(179, 167, 136);
+}
+#pies section{
+    padding: 2%;
+}
+.destacadogrande{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.destacadograndeX{
+    color: white;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-shadow: 3px 1px 3px #745b12;
+}
+
+#center ul li{
+   list-style-type: none;
+   
+}
+#center .destacadogrande{
+    color: white;
+
+}
+#right p{
+    margin-top: 15px;
+    font-size: 1.2em;
+   text-align: start;
+}
+#left p:first-child{
+    text-align: center; 
+}
+#right a{
+    color: rgb(216, 194, 154);
+}
+#right a:visited{
+    color: orange;
+}
+#left p{
+    margin-top: 60px;
+}
+#cabecera1{
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px 0 30px 0;
+    border: 1px solid rgb(75, 57, 35);
+    border-radius: 10px;
+    background: rgb(238,114,6);
+background: radial-gradient(circle, rgba(238,114,6,1) 0%, rgba(19,11,4,1) 100%);
+   
+}
+
+#cabecera1 h1{
+    padding: 30px 0;
+    font-size: 3em;
+    color: rgb(255, 254, 252);
+    text-shadow: 4px 4px 2px  rgb(146, 129, 108);
+    text-align: center;
+
+}
+#formulario{
+    font-size: 1.1em;
+}
+form{
+    width: 80%;
+    border: 1px solid rgb(75, 57, 35);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px auto;
+   
+    
+}
+form section{
+    
+    margin-bottom: 20px;
+    border: 1px solid rgb(75, 57, 35);
+    border-radius: 8px;
+    padding: 10px;
+}
+form section p{
+    margin-bottom: 10px;
+    padding: 5px;
+    
+}
+label{
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: rgb(102, 90, 75);
+    font-style: italic;
+    
+}
+input{
+    margin-top: 5px;
+}
+input[type=radio]{
+    appearance: none;
+    background-color: rgb(80, 50, 17);
+    border: none;
+    border-radius: 10px;
+    color: rgb(243, 243, 236);
+    padding: 7px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+input[type=radio]:checked{
+    background-color: black;
+}
+
+form h2{
+font-size: 1.5;
+font-weight: bold;
+background: rgb(139,84,37);
+background: radial-gradient(circle, rgba(139,84,37,1) 0%, rgba(36,26,19,1) 100%);
+color: rgb(245, 245, 235);
+padding: 5px;
+text-align: center;
+margin-bottom: 20px;
+border: 1px solid rgb(75, 57, 35);
+}
+.par{
+    color: #4b432b;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.enviar{
+    margin: 10px;
+    font-size: .8em;
+    font-weight: bold;
+    background: rgb(139,84,37);
+    background: radial-gradient(circle, rgba(139,84,37,1) 0%, rgba(36,26,19,1) 100%);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 4px 2px  rgba(146, 129, 108, 0.733);
+}
+#volver{
+    margin: 10px;
+    cursor: pointer;
+    padding: 12px;
+   background-color:  rgb(139,84,37);
+   border-radius: 50px;
+    width: 80px;
+
+}
+#volver a{
+    text-decoration: none;
+    color: #e0dcce;
+    font-size: 1em;
+    font-weight: bold;
+   
+}
+#button{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

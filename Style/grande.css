@@ -1,0 +1,64 @@
+/*màs de 700px*/
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: beige;
+}
+@media screen and (min-width: 700px)
+{
+    #container{
+        display: flex;
+        margin: 10px 0px;
+    }
+    #container .acoso_1{
+        padding: 0;
+
+    }
+    #container ul{
+        flex: 1;
+        
+       
+    }
+    #container figure{
+        flex: 2;  
+        padding: 5px;
+        
+
+    }
+    .foto_1 img{
+        width: 100%;
+    }
+    #container2{
+        display: flex;
+        margin: 50px auto;
+    }
+    #container2 figure{
+        flex: 1;
+    }
+    #container2 figure img{
+       width: 100%;
+    }
+    #container2 article{
+        flex: 1;
+    }
+
+    #pies{
+        display: flex;
+        padding: 1%;
+    }
+    #pies #left{
+        flex: 1;
+        padding: 10px;
+    }
+    #pies #center{
+        flex: 2;
+        padding: 10px;
+    }
+    #pies #right{
+        flex: 1;
+        padding: 10px;
+    }
+
+}
+
+    
